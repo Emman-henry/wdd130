@@ -1,0 +1,69 @@
+/* Main container settings */
+main {
+    max-width: 840px;
+    margin: 0 auto; /* Centers the main content */
+}
+
+/* Aside settings */
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0); /* Corrected RGB values for border color */
+    padding: 1rem;
+    background-color: rgb(243, 246, 233); /* Fixed background color property */
+    color: #333; /* Text color inside aside */
+}
+
+/* Image styling inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Image styling inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraph styling */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+/* Nav container styling */
+nav {
+    background-color: #333; /* Dark background for nav */
+    padding: 1rem;
+    text-align: center; /* Centers the navigation links */
+}
+
+/* Nav anchor link styling */
+nav a {
+    color: white; /* White text for the links */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 15px; /* Adds space between links */
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Nav anchor link hover effect */
+nav a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Rounds the corners on hover */
+}
+
+/* Heading 1 Rule */
+h1 {
+    font-size: 2.5em;  /* Makes the font size larger */
+    color: #333;       /* Sets the text color to a dark gray */
+    text-align: center; /* Centers the heading on the page */
+    margin-bottom: 20px; /* Adds some space below the heading */
+}
