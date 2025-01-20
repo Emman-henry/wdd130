@@ -63,7 +63,7 @@ nav a:hover {
 /* Heading 1 Rule */
 h1 {
     font-size: 2.5em;  /* Makes the font size larger */
-    color: #333;       /* Sets the text color to a dark gray */
+    color: #563c3c;       /* Sets the text color to a dark gray */
     text-align: center; /* Centers the heading on the page */
     margin-bottom: 20px; /* Adds some space below the heading */
 }
