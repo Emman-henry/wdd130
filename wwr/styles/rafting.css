@@ -8,7 +8,80 @@
     --white-color: #ffffff;  /* White */
     --footer-bg-color: #0284c7;  /* Bright Dark Blue for footer */
 }
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes its natural width, nav takes remaining space */
+    align-items: center;  /* Align items vertically in the center */
+    padding: 10px 20px;  /* Add padding around the header */
+}
 
+/* Styling the Logo */
+.logo {
+    max-width: 150px; /* Limit the logo size */
+    height: auto;
+}
+
+/* Styling the Navigation Bar using Flexbox */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items horizontally from left to right */
+    gap: 20px;  /* Space between links */
+}
+
+/* Styling the Navigation Links */
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+/* Styling the History Section */
+.history {
+    text-align: center; /* Center the h2 heading */
+    margin-bottom: 30px; /* Space below the section */
+}
+
+/* Container for history content (the two paragraphs and image) */
+.history-content {
+    display: flex; /* Use flexbox to arrange the content horizontally */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Vertically align the items */
+    gap: 40px; /* Add space between the content (text and image) */
+    flex-wrap: wrap; /* Allow wrapping of content on smaller screens */
+    margin-top: 40px;
+}
+
+/* Styling the Image Inside History Section */
+.history-content img {
+    max-width: 350px; /* Limit the image size */
+    height: auto; /* Keep the image’s aspect ratio */
+}
+
+/* Styling the Paragraphs */
+.history-content p {
+    max-width: 500px; /* Limit paragraph width */
+    font-size: 1rem; /* Set font size */
+    line-height: 1.6; /* Set line height */
+    color: var(--text-color); /* Color for the text */
+}
+.ad {
+    text-align: center; /* Center the h2 heading */
+    margin-bottom: 30px; /* Space below the section */
+}
+.rafting-images{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    
+}
+.rafting-images img {
+    max-width: 250px; /* Limit the image size */
+height: auto; /* Keep the image’s aspect ratio */
+}
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
