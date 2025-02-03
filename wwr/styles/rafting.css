@@ -46,18 +46,16 @@ nav a:hover {
 }
 
 /* Container for history content (the two paragraphs and image) */
-.history-content {
-    display: flex; /* Use flexbox to arrange the content horizontally */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Vertically align the items */
-    gap: 40px; /* Add space between the content (text and image) */
-    flex-wrap: wrap; /* Allow wrapping of content on smaller screens */
-    margin-top: 40px;
-}
+.history-content 
+    {
+        display: flex;            /* Display items in a row */
+        justify-content: space-around; /* Distribute space around items */
+        align-items: center;      /* Vertically center items */
+      }
 
 /* Styling the Image Inside History Section */
 .history-content img {
-    max-width: 350px; /* Limit the image size */
+    max-width: 150px; /* Limit the image size */
     height: auto; /* Keep the image’s aspect ratio */
 }
 
@@ -79,7 +77,7 @@ nav a:hover {
     
 }
 .rafting-images img {
-    max-width: 250px; /* Limit the image size */
+    max-width: 150px; /* Limit the image size */
 height: auto; /* Keep the image’s aspect ratio */
 }
 /* Global Styles */
@@ -171,6 +169,10 @@ footer {
     color: var(--white-color);
     text-align: center;
     padding: 20px;
+}
+.social-media{
+display: flex;
+justify-content: flex-end;
 }
 
 footer .social-media a {
