@@ -1,0 +1,103 @@
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo takes its natural width, nav takes remaining space */
+    align-items: center;  /* Align items vertically in the center */
+    padding: 10px 20px;  /* Add padding around the header */
+}
+
+/* Styling the Logo */
+.logo {
+    max-width: 150px; /* Limit the logo size */
+    height: auto;
+}
+
+/* Styling the Navigation Bar using Flexbox */
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align items horizontally from left to right */
+    gap: 20px;  /* Space between links */
+}
+
+/* Styling the Navigation Links */
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+iframe {
+    border: none;
+  }
+
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0055a3;
+}
+
+.employee-profiles .profile {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+footer {
+    background-color: beige;
+    color: var(--white-color);
+    text-align: center;
+    padding: 10px;
+}
+.social-media{
+    display: flex;
+    justify-content: flex-end;
+    }
+    
+    footer .social-media a {
+        margin-right: 10px;
+    }
+    
+    /* Social Media Links */
+    footer .social-media a img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    footer .social-media a {
+        text-decoration: none;  /* Remove underlines from social media links */
+    }
+    
+    /* Styling the Footer Copyright Text */
+    footer p {
+        font-size: 1rem;
+        margin-top: 10px;
+        color: rgb(6, 4, 4);
+    }
+    
