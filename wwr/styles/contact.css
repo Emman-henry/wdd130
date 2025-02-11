@@ -1,8 +1,18 @@
+:root {
+    --primary-color: #030919;  /* Brighter Blue */
+    --secondary-color: #06b6d4;  /* Brighter Cyan */
+    --accent-color: #16a34a;  /* Bright Green */
+    --text-color: #000000;  /* Dark Gray for text */
+    --background-color: #e0f7fa;  /* Light Aqua */
+    --white-color: #ffffff;  /* White */
+    --footer-bg-color: #0284c7;  /* Bright Dark Blue for footer */
+}
 header {
     display: grid;
     grid-template-columns: auto 1fr; /* Logo takes its natural width, nav takes remaining space */
     align-items: center;  /* Align items vertically in the center */
     padding: 10px 20px;  /* Add padding around the header */
+    background-color: #e0f7fa;
 }
 
 /* Styling the Logo */
@@ -35,23 +45,91 @@ iframe {
   }
 
 
-.contact-form input, .contact-form textarea {
+/* Overall container for the contact form */
+.contact-form {
+    max-width: 400px;   /* Make the form narrower */
+    margin: 20px auto;
+    padding: 15px;       /* Reduced padding for a more compact form */
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styling the heading */
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.2em;    /* Slightly smaller font */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 6px;   /* Reduced space between labels and inputs */
+    font-size: 0.9em;     /* Slightly smaller font for labels */
+    color: #333;
+}
+
+/* Input fields and textarea styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;       /* Reduced padding */
+    margin-bottom: 10px; /* Reduced spacing between inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.9em;    /* Slightly smaller font */
+}
+
+textarea {
+    resize: vertical;    /* Allow resizing only vertically */
+    height: 100px;       /* Set a fixed height for the textarea */
+}
+
+/* Styling for the radio buttons */
+.radio-group label {
+    display: inline-block;
+    margin-right: 10px;   /* Reduced margin */
+    font-size: 0.9em;
+}
+
+input[type="radio"] {
+    margin-right: 5px;    /* Reduced space between radio buttons */
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 8px;    /* Reduced space between checkbox and label */
+}
+
+/* Button styling */
+button {
+    display: block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-}
-
-.contact-form button {
-    background-color: #0066cc;
+    background-color: #007BFF;
     color: white;
-    padding: 10px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
-    background-color: #0055a3;
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
+
+/* Make the form responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+}
+
 
 .employee-profiles .profile {
     display: inline-block;
