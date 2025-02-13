@@ -11,7 +11,7 @@
 header {
     display: grid;
     grid-template-columns: auto 1fr; /* Logo takes its natural width, nav takes remaining space */
-    align-items: center;  /* Align items vertically in the center */
+    align-items: flex-start;  /* Align items vertically in the center */
     padding: 10px 20px;  /* Add padding around the header */
 }
 
@@ -29,6 +29,8 @@ nav {
 }
 
 /* Styling the Navigation Links */
+
+
 nav a {
     color: var(--primary-color);
     text-decoration: none;

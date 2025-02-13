@@ -1,26 +1,17 @@
-<main>
-    <!-- Company Info -->
-    <!DOCTYPE html>
-    <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="To givr the user relevant information about the company and also get some information from the user.">
-        <meta name="author" content="Emmanuel Edukere Henry">
-    
-        <title>contact  White Water Rafting</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-        
-        <!-- Google Fonts - Replace with your selected fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
-        <!-- Link to the CSS file -->
-        <link rel="stylesheet" href="styles/contact.css">
-    </head>
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>'contact' 'White Water Rafting'</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
     <header>
         <img src="images/z-wwr-blue.jpg" alt="Rafting Logo" class="logo">
+        <h1>White Water Rafting</h1> <!-- Added h1 here -->
         
         <nav>
             <a href="index.html">Home</a>
@@ -30,69 +21,71 @@
         </nav>
     </header>
 
-    <section class="company-info">
-        <h2>Contact Information</h2>
-    
-        <address>
-            <p>White Water Rafting, Adventure Park, 123 River Street, Raftville, RA 12345</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
-        </address>
-    
-     <h3>Our Location</h3>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63626.946762540625!2d7.908629765724408!3d4.650302754170888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067c2bebd34d48b%3A0xe2be48c617d33fa0!2sEket%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1739076436066!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <main>
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <address>
+                <p>White Water Rafting, Adventure Park, 123 River Street, Raftville, RA 12345</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+            </address>
+        
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63626.946762540625!2d7.908629765724408!3d4.650302754170888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067c2bebd34d48b%3A0xe2be48c617d33fa0!2sEket%2C%20Akwa%20Ibom!5e0!3m2!1sen!2sng!4v1739076436066!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
-    <!-- Employee Profiles -->
-    <section class="employee-profiles">
-        <h2>Meet Our Team</h2>
-        <div class="profile">
-            <img src="images/Image2.jpg" alt="Employee 1">
-            <p>John Doe - Lead Rafting Guide</p>
+        <!-- Employee Profiles -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profile">
+                <img src="images/Image2.jpg" alt="Employee 1">
+                <p>John Doe - Lead Rafting Guide</p>
+            </div>
+            <div class="profile">
+                <img src="images/Image3.jpg" alt="Employee 2">
+                <p>Jane Smith - Marketing Manager</p>
+            </div>
+            <div class="profile">
+                <img src="images/Image4.jpg" alt="Employee 3">
+                <p>Robert Johnson - Customer Service</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message-purpose">Message Purpose:</label>
+                <label><input type="radio" id="general-inquiry" name="message-purpose" value="general-inquiry"> General Inquiry</label>
+                <label><input type="radio" id="reservation-question" name="message-purpose" value="reservation-question"> Reservation Question</label>
+                <label><input type="radio" id="website-suggestion" name="message-purpose" value="website-suggestion"> Website Suggestion</label>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 White Water Rafting. All rights reserved. Emmanuel Henry.</p>
+        <div class="social-media">
+            <a href="#"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/insta.png" alt="Instagram"></a>
         </div>
-        <div class="profile">
-            <img src="images/Image3.jpg" alt="Employee 2">
-            <p>Jane Smith - Marketing Manager</p>
-        </div>
-        <div class="profile">
-            <img src="images/Image4.jpg" alt="Employee 3">
-            <p>Robert Johnson - Customer Service</p>
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message-purpose">Message Purpose:</label>
-            <label><input type="radio" name="message-purpose" value="general-inquiry"> General Inquiry</label>
-            <label><input type="radio" name="message-purpose" value="reservation-question"> Reservation Question</label>
-            <label><input type="radio" name="message-purpose" value="website-suggestion"> Website Suggestion</label>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-</main>
-<footer>
-    <p>&copy; 2025 White Water Rafting. All rights reserved. Emmanuel Henry.</p>
-    <div class="social-media">
-        <a href="#"><img src="images/fb.png" alt="Facebook"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="images/insta.png" alt="Instagram"></a>
-    </div>
-    <p><a href="https://app.moqups.com/WAUhUbt887IxwBoe1MKqMp9eXqxGJNlC/view/page/ad64222d5">View the Contact Us Wireframe</a></p>
-</footer>
-
+        <p><a href="https://app.moqups.com/WAUhUbt887IxwBoe1MKqMp9eXqxGJNlC/view/page/ad64222d5">View the Contact Us Wireframe</a></p>
+    </footer>
 </body>
 </html>

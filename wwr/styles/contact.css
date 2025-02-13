@@ -7,129 +7,60 @@
     --white-color: #ffffff;  /* White */
     --footer-bg-color: #0284c7;  /* Bright Dark Blue for footer */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Logo takes its natural width, nav takes remaining space */
-    align-items: center;  /* Align items vertically in the center */
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
     padding: 10px 20px;  /* Add padding around the header */
-    background-color: #e0f7fa;
 }
-
-/* Styling the Logo */
-.logo {
-    max-width: 150px; /* Limit the logo size */
-    height: auto;
-}
-
-/* Styling the Navigation Bar using Flexbox */
 nav {
     display: flex;
     justify-content: flex-end; /* Align items horizontally from left to right */
     gap: 20px;  /* Space between links */
 }
-
-/* Styling the Navigation Links */
-nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 1.125rem;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: var(--secondary-color);
-}
-
 iframe {
     border: none;
-  }
+}
 
-
-/* Overall container for the contact form */
-.contact-form {
-    max-width: 400px;   /* Make the form narrower */
-    margin: 20px auto;
-    padding: 15px;       /* Reduced padding for a more compact form */
-    background-color: #f9f9f9; /* Light background */
+/* Company Info Section */
+.company-info {
+    padding: 20px;
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px;
 }
 
-/* Styling the heading */
-.contact-form h2 {
+.company-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.company-info address {
+    font-style: normal;
+    color: #333;
+}
+
+/* Employee Profiles Section */
+.employee-profiles {
     text-align: center;
-    font-size: 1.2em;    /* Slightly smaller font */
-    color: #333;
-    margin-bottom: 15px;
+    margin: 20px;
 }
 
-/* Label styles */
-label {
-    display: block;
-    margin-bottom: 6px;   /* Reduced space between labels and inputs */
-    font-size: 0.9em;     /* Slightly smaller font for labels */
+.employee-profiles h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
     color: #333;
 }
-
-/* Input fields and textarea styling */
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;       /* Reduced padding */
-    margin-bottom: 10px; /* Reduced spacing between inputs */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 0.9em;    /* Slightly smaller font */
-}
-
-textarea {
-    resize: vertical;    /* Allow resizing only vertically */
-    height: 100px;       /* Set a fixed height for the textarea */
-}
-
-/* Styling for the radio buttons */
-.radio-group label {
-    display: inline-block;
-    margin-right: 10px;   /* Reduced margin */
-    font-size: 0.9em;
-}
-
-input[type="radio"] {
-    margin-right: 5px;    /* Reduced space between radio buttons */
-}
-
-/* Checkbox styling */
-input[type="checkbox"] {
-    margin-right: 8px;    /* Reduced space between checkbox and label */
-}
-
-/* Button styling */
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Make the form responsive */
-@media (max-width: 768px) {
-    .contact-form {
-        padding: 15px;
-    }
-}
-
 
 .employee-profiles .profile {
     display: inline-block;
@@ -141,41 +72,124 @@ button:hover {
 .employee-profiles img {
     width: 100%;
     border-radius: 50%;
+    max-width: 120px; /* Limit image size */
+    height: auto;
 }
 
-iframe {
-    width: 100%;
-    height: 300px;
+.employee-profiles p {
+    margin-top: 10px;
+    font-size: 1rem;
 }
+
+/* Contact Form Section */
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Social Media Links */
 footer {
-    background-color: beige;
+    background-color: var(--footer-bg-color);
     color: var(--white-color);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    font-size: 1rem;
 }
-.social-media{
+
+footer .social-media {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    margin-right: 15px;
+}
+
+footer .social-media a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: var(--white-color);
+}
+
+footer .social-media a {
+    text-decoration: none;
+}
+
+footer .social-media a:hover img {
+    opacity: 0.7;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .employee-profiles {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    footer .social-media a {
-        margin-right: 10px;
+
+    .employee-profiles .profile {
+        width: 80%; /* Make profiles take more space on smaller screens */
+        margin: 10px 0;
     }
-    
-    /* Social Media Links */
-    footer .social-media a img {
-        width: 30px;
-        height: 30px;
+
+    .contact-form {
+        padding: 20px;
+        margin: 10px;
     }
-    
-    footer .social-media a {
-        text-decoration: none;  /* Remove underlines from social media links */
-    }
-    
-    /* Styling the Footer Copyright Text */
-    footer p {
-        font-size: 1rem;
-        margin-top: 10px;
-        color: rgb(6, 4, 4);
-    }
-    
+}
