@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>contact White Water Rafting</title>
+    <title>contact and White Water Rafting</title>
     <link rel="stylesheet" href="styles/contact.css">
     <meta name="description" content="Experience thrilling white water rafting adventures with our expert guides. Explore exciting rafting trips for all skill levels and create unforgettable memories with White Water Rafting.">
     <meta name="author" content="Emmanuel Edukere Henry">
@@ -56,26 +56,34 @@
         <!-- Contact Form -->
         <section class="contact-form">
             <h2>Contact Us</h2>
-            <form action="submit_form.php" method="POST">
-                
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+<form action="submit_form.php" method="POST">
+    
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
 
-                <label for="message-purpose">Message Purpose:</label>
-                <label><input type="radio" id="general-inquiry" name="message-purpose" value="general-inquiry"> General Inquiry</label>
-                <label><input type="radio" id="reservation-question" name="message-purpose" value="reservation-question"> Reservation Question</label>
-                <label><input type="radio" id="website-suggestion" name="message-purpose" value="website-suggestion"> Website Suggestion</label>
+    <label>Message Purpose:</label>
+    <label for="general-inquiry">
+        <input type="radio" id="general-inquiry" name="message-purpose" value="general-inquiry"> General Inquiry
+    </label>
+    <label for="reservation-question">
+        <input type="radio" id="reservation-question" name="message-purpose" value="reservation-question"> Reservation Question
+    </label>
+    <label for="website-suggestion">
+        <input type="radio" id="website-suggestion" name="message-purpose" value="website-suggestion"> Website Suggestion
+    </label>
 
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="newsletter"><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+    <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+    </label>
 
-                <button type="submit">Send Message</button>
-            </form>
+    <button type="submit">Send Message</button>
+</form>
         </section>
 
     </main>
