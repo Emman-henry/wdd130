@@ -20,7 +20,6 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-self: space-between;
     padding: 10px 20px;  /* Add padding around the header */
 }
 nav {
