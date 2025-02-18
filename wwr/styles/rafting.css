@@ -155,17 +155,7 @@ p {
     height: auto;
 }
 
-/* Styling the Navigation Links */
-nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 1.125rem;
-    margin-right: 20px;
-}
 
-nav a:hover {
-    color: var(--secondary-color);
-}
 
 .company-info {
     padding: 20px;
