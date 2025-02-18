@@ -319,7 +319,7 @@ button:hover {
 /* Card Description */
 .card-description {
     font-size: 1rem;
-    color: #666;
+    color: #201b1b;
     margin-bottom: 20px;
 }
 
@@ -341,15 +341,15 @@ button:hover {
 
 /* Individual Card Styling (Dog, Cat, Bird) */
 .card-dog .card-title {
-    color: #ff6f61;  /* Dog Card - warm orange */
+    color: #231a19;  /* Dog Card - warm orange */
 }
 
 .card-cat .card-title {
-    color: #4CAF50;  /* Cat Card - green */
+    color: #121412;  /* Cat Card - green */
 }
 
 .card-bird .card-title {
-    color: #00bcd4;  /* Bird Card - cyan */
+    color: #0f1112;  /* Bird Card - cyan */
 }
 .trip-details {
     list-style-type: none;
@@ -394,7 +394,7 @@ button:hover {
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #06b6d4;
+    background-color: #273335;
     color: white;
     text-decoration: none;
     font-size: 1.25rem;
@@ -437,7 +437,7 @@ button:hover {
 
 .content-item p {
     font-size: 1.125rem;
-    color: #666;
+    color: #151212;
     margin-top: 10px;
 }
 /* Footer Styles */
