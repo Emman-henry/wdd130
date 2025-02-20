@@ -129,6 +129,51 @@ p {
     height: auto;
     display: block;
 }
+.signup-form-container {
+    margin-top: 30px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight background overlay */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.signup-form input::placeholder {
+    color: #aaa;
+}
+.signup-form button {
+    padding: 12px 30px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.signup-form button:hover {
+    background-color: #ff9900;
+}
 
 /* Styling the Article Inside Hero */
 .hero article {
