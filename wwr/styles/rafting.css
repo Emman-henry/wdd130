@@ -78,10 +78,12 @@ nav a:hover {
 
 .hero p {
     font-size: 1.2rem;
-    color: #ddd;
+    color: #faf1f1;
     margin-top: 10px;
 }
-
+.hero h2{
+    color: #faf1f1;
+}
 /* ===================== Sign Up Form Styles ===================== */
 .signup-form-container {
     margin-top: 30px;
@@ -296,8 +298,8 @@ nav a:hover {
 .card-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #06b6d4;  /* Brighter cyan for buttons */
-    color: white;
+    background-color: #18191a;  /* Brighter cyan for buttons */
+    color: rgb(228, 220, 220);
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
@@ -305,7 +307,7 @@ nav a:hover {
 }
 
 .card-button:hover {
-    background-color: #0284c7;  /* Darker cyan on hover */
+    background-color: #101111;  /* Darker cyan on hover */
 }
 
 /* Individual Card Styling (Dog, Cat, Bird) */
@@ -318,7 +320,7 @@ nav a:hover {
 }
 
 .card-bird .card-title {
-    color: #00bcd4;  /* Bird Card - cyan */
+    color: #0f0f0f;  /* Bird Card - cyan */
 }
 
 /* ===================== Contact Page Styles ===================== */
@@ -403,7 +405,7 @@ nav a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #45a049;
+    background-color: #0f110f;
 }
 
 .contact-form .checkbox-container {
@@ -462,7 +464,7 @@ nav a:hover {
 }
 
 .trips-table th {
-    background-color: #4CAF50;
+    background-color: #0f0f0f;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 600;
@@ -471,7 +473,7 @@ nav a:hover {
 .trips-table td {
     background-color: #f9f9f9;
     font-size: 1rem;
-    color: #555;
+    color: #050505;
 }
 
 .trips-table tr:nth-child(even) td {
@@ -485,7 +487,7 @@ nav a:hover {
 
 .trips-table td:last-child {
     font-weight: 600;
-    color: #4CAF50;
+    color: #121312;
 }
 
 .trips-table td {
