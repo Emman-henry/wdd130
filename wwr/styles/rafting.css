@@ -105,14 +105,14 @@ nav a:hover {
     padding: 12px;
     margin: 10px 0;
     font-size: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #111111;
     border-radius: 5px;
     background-color: #fff;
     color: #333;
 }
 
 .signup-form input::placeholder {
-    color: #aaa;
+    color: #0c0b0b;
 }
 
 .signup-form button {
@@ -163,6 +163,7 @@ nav a:hover {
 .content-item h2 {
     font-size: 1.5rem;
     margin-top: 15px;
+    color: #000;
 }
 
 .content-item p {
